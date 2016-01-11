@@ -354,7 +354,7 @@ defaults write com.apple.dock tilesize -int 36
 defaults write com.apple.dock mineffect -string 'scale'
 
 # Dock orientation: 'left', 'bottom', 'right'
-defaults write com.apple.dock 'orientation' -string 'left'
+defaults write com.apple.dock 'orientation' -string 'bottom'
 
 # Lock the Dock position
 # defaults write com.apple.dock position-immutable -bool true
