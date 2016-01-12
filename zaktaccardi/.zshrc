@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/zak/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -54,7 +54,9 @@ plugins=(git, brew, brew-cask, osx)
 # User configuration
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+
+#add android SDK to PATH
+export PATH=$PATH:${HOME}/Library/Android/sdk/platform-tools
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,20 +85,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-
-#### JENV ####
-#To use Homebrew's directories rather than ~/.jenv add to your profile:
-export JENV_ROOT=/usr/local/var/jenv
-
-#To enable shims and autocompletion add to your profile:
-if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-### END JENV ####
-
-# export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
-# export JAVA_HOME="/usr/local/var/jenv/versions/1.8"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk"
+export JAVA_HOME=`/usr/libexec/java_home -v1.8`
 export STUDIO_JDK=$JAVA_HOME
+export ANDROID_SDK_HOME="${HOME}/Library/Android/sdk"
+#
+# #### JENV ####
+# #To use Homebrew's directories rather than ~/.jenv add to your profile:
+# export JENV_ROOT=/usr/local/var/jenv
+#
+# #To enable shims and autocompletion add to your profile:
+# if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+#
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
+### END JENV ####

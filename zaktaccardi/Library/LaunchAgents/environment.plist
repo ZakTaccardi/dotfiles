@@ -9,10 +9,9 @@
     <string>sh</string>
     <string>-c</string>
     <string>
-    launchctl setenv JAVA_HOME /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk
-    launchctl setenv STUDIO_JDK /Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk
+    //launchctl setenv JAVA_HOME `/usr/libexec/java_home`
+    //launchctl setenv STUDIO_JDK `/usr/libexec/java_home`
     </string>
-
   </array>
   <key>RunAtLoad</key>
   <true/>
