@@ -93,11 +93,11 @@ export GRADLE_HOME="/usr/local/Cellar/gradle/2.10/libexec"
 #
 # #### JENV ####
 # #To use Homebrew's directories rather than ~/.jenv add to your profile:
-# export JENV_ROOT=/usr/local/var/jenv
-#
-# #To enable shims and autocompletion add to your profile:
-# if which jenv > /dev/null; then eval "$(jenv init -)"; fi
-#
-# export PATH="$HOME/.jenv/bin:$PATH"
-# eval "$(jenv init -)"
+export JENV_ROOT=/usr/local/var/jenv
+
+#To enable shims and autocompletion add to your profile:
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 ### END JENV ####
