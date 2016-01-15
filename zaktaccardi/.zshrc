@@ -88,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
 export JAVA_HOME=`/usr/libexec/java_home -v1.8`
 export STUDIO_JDK=$JAVA_HOME
 export ANDROID_SDK_HOME="${HOME}/Library/Android/sdk"
+export ANDROID_HOME="${HOME}/Library/Android/sdk"
+export GRADLE_HOME="/usr/local/Cellar/gradle/2.10/libexec"
 #
 # #### JENV ####
 # #To use Homebrew's directories rather than ~/.jenv add to your profile:
